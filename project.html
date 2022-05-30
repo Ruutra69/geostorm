@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="project.css">
+
+<script>
+var slideIndex = 0;
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script> 
+  
+</head>
+    <body>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cv.html">CV</a>
+            <a href="project.html">Project</a>        
+        </div>
+                
+        <h1>            
+            <img src="Textures/Schermafbeelding 2022-04-12 om 13.32.22.png">
+        </h1>
+
+        <div class="leftinfo">
+            
+            <p>In de opleiding ICT op de campus De Nayer krijgen we in het eerste jaar voor het vak Project Enterprise de opdracht om een project te bedenken, de nodige voorbereidingen hiervoor te maken, en uiteindelijk een afgewerkt resultaat te bereiken.
+            Wegens het feit dat ik in de richting Artificial Intelligence zit, moet een deel van ons project daar ook een verband mee hebben.
+            Ik en een medestudent besloten om samen als project een videogame te ontwikkelen in de engine Unity.</p>
+            </div>
+            <div class="rightinfo">
+            <p>Ik had zelf al een beetje ervaring met Unity, en vond het een interesant idee. We zijn in Februarie ongeveer begonnen met het spel te ontwikkelen.</p>
+            <p>De naam van het spel is GeoStorm.</p>
+            <p>Het spel is twee dimensionaal en valt onder het genre van 'platformer' videogames. Voor het grafische aspect gebruiken we, zoals vaak gedaan wordt in de ontwikkeling van spellen, bibliotheken met grafische objecten met een zelfde bepaalde animatiestijl.</p>
+            <p> Het doel van het spel is om  verschillende levels te doorstaan, telkens delen van een netwerk van ondergrondse grotten, die verbonden zijn met portalen. Er zijn echter vijanden, die je gaan proberen tegen te houden. Deze vijanden zijn door middel van het             <a href="https://arongranberg.com/astar/features">A*</a>
+                project, een bibliotheek die op basis van AI Pathfinding, instaat om bijvoorbeeld de kortste weg naar de speler te berekenen.</p>
+           <p>Doorheen de levels zijn kristallen verspreid, die je kan kappotslaan om ze te verzamelen.
+            Met deze kristallen kan de speler dan upgrades kopen.
+           
+            De speler heeft 5 levens in het begin, maar wanneer een vijand je pijn doet, verlies je 1 leven. Je kan na het succesvol verslaan van vijf vijanden één hartje terugkrijgen. Dit noemen we de mana (zie foto's hieronder).
+            Als al je levens gebruikt zijn, ben je dood, en dan begin je terug opnieuw. </p>
+        </div>
+        <div class="container">  
+            <button class="button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button" onclick="plusDivs(+1)">&#10095;</button>
+            <a>
+                <img class="mySlides"  src="Textures/Schermafbeelding 2022-03-28 om 12.58.04.png">
+                <img class="mySlides"  src="Textures/Schermafbeelding 2022-03-28 om 12.58.15.png">
+                <img class="mySlides"  src="Textures/Schermafbeelding 2022-03-28 om 12.58.22.png">
+            </a>
+            <img class="mySlides"  src="Textures/Schermafbeelding 2022-03-28 om 12.57.26.png">
+        </div>  
+      <div>
+          <p>Om al deze zaken te kunnen realiseren in de game engine Unity, moesten ik en mijn collega de verschillende aspecten van Unity leren.</p>
+          <p>Een goede manier om met een programma zoals Unity te leren werken, is door instructie videos op YouTube te bekijken. Er zijn verschillende kanalen die de basis en meer geavanceerde technieken gronding uitleggen.</p>
+          <p> Een van die kanalen is Brackeys.<iframe width="200" height="100" src="https://www.youtube.com/embed/j48LtUkZRjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            Ik heb zelf het meeste uit zijn video's bijgeleerd, en als je zelf geintresseerd bent in het leren van Unity, raad ik dit kanaal sterk aan.</p>
+          <p>Voor grafische aspect gebruiken we kleine objecten die we dan zelf in de gewenste positie plaatsen. Dit gaat over rotsen, planten en alle andere objecten die in de levels voorkomen. Ook hebben we een achtergrond, die uit meerdere lagen bestaat en naar onze smaak bij de sfeer van het spel zijn stijl past</p>
+          <p> De speler bedient het spel op een computer met een toetsenbord en muis. Het speel gaat worden ontwikkeld voor MacOS en Windows. Dit is namelijk eenvoudig te bereiken in de Unity werkomgeving.</p><p>
+              Om bijvoorbeeld te kunnen bereiken dat als de speler een toest indrukt, het personage zich verplaatst, moesten we onze objecten voorzien van scripts met C# code.</p> <p>Maar verder moesten we als ontwikkelaar ook, naast het coderen, in Unity zelf onze gewenste game mechanics ontwikkelen.</p>
+          </p>
+          <p>Copyright © Thomas More Mechelen-Antwerpen vzw - Campus De Nayer - Professionele bachelor elektronica-ict – 2021</p>
+      </div>
+    </body>
+</html>
